@@ -1,0 +1,370 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* Menu (Logo + iconi + Membership) */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+  max-width: 250px;
+  height: auto;
+  margin-left: 100px;
+}
+.icons {
+  align-items: center;
+  width: 400px;
+  margin-right: 100px;
+}
+.icons img {
+  position: relative;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  margin-right: 18px;
+}
+button {
+  background-color: white;
+  color: black;
+  border: solid 1px grey;
+  margin: 10px 20px;
+  border-radius: 25px;
+  padding: 10px 20px 10px 20px;
+}
+/* Following (Colonna sinistra) */
+.following {
+  margin: 100px;
+  padding-top: 100px;
+  margin-right: 5%;
+  border-bottom: solid 1px #888;
+}
+.following span {
+  padding-right: 15px;
+}
+/* Divisione di colonne con Flex (Destra e sinistra) */
+.vlog-container {
+  display: flex;
+}
+/* Colonna sinistra */
+.columnleft {
+  flex-direction: column;
+}
+/* Impostazioni dei vlogs (Colonna sinistra) */
+.entrata-vlog1 {
+  flex: 1;
+  margin-left: 100px;
+  padding: 20px;
+  max-width: 100%;
+  height: 240px;
+}
+
+.autore {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.autore img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.autore span {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.entrata-vlog1 p {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 60%;
+}
+
+.imagevlog {
+  flex: 1;
+  text-align: right;
+}
+
+.imagevlog img {
+  max-width: 300px;
+  height: 165px;
+  position: relative;
+  bottom: 197px;
+  right: 43px;
+  width: 294px;
+}
+
+.data {
+  margin-top: 10px;
+}
+
+.data span {
+  font-style: normal;
+  color: #888;
+  padding-right: 5px;
+}
+
+.data button {
+  background-color: rgb(227, 227, 227);
+  color: rgb(141, 136, 136);
+  border: rgb(227, 227, 227);
+  border-radius: 25px;
+  padding: 5px;
+}
+.altri-loghi img {
+  width: 24px;
+  height: 24px;
+  margin-right: 18px;
+}
+.marcatore img {
+  position: relative;
+  bottom: 200px;
+  left: 729px;
+  width: 24px;
+  height: 24px;
+  margin-right: 18px;
+}
+.tre-punti img {
+  position: relative;
+  bottom: 228px;
+  left: 770px;
+  width: 24px;
+  height: 24px;
+  margin-right: 18px;
+}
+
+/* Impostazioni degli elementi (Colonna destra) */
+.entrata-vlog2 {
+  width: 50%;
+  position: relative;
+  top: 0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  height: 2000px;
+}
+/* Loghi Medium + Twitter (Colonna destra) */
+.loghiseccion {
+  flex-direction: row;
+  text-align: center;
+  margin-top: 20px;
+}
+.loghiseccion span {
+  font-size: 1.5rem;
+  color: lightgray;
+  position: relative;
+  bottom: 13px;
+}
+
+.image1 {
+  width: 40px;
+  height: 40px;
+}
+.image2 {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 5px;
+}
+/* Titolo + Connect to Twitter (Colonna destra) */
+.seccion1 {
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  border-bottom: solid 1px lightgray;
+}
+.discover {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+}
+
+.enlace-boton {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Boton Connect to Twitter (Colonna destra) */
+button.connect {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  padding-left: 50px;
+  position: relative;
+  left: 30px;
+}
+.logoconnect {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  right: 20px;
+}
+.maybe {
+  color: gray;
+  font-size: 1rem;
+}
+
+/* Raccomandazioni bottoni (Colonna destra) */
+.seccion2 {
+  text-align: left;
+  padding: 20px;
+  width: 350px;
+}
+.seccion2 h3 {
+  font-weight: 400;
+}
+.boton {
+  background-color: rgb(227, 227, 227);
+  color: black;
+  border: rgb(227, 227, 227);
+  border-radius: 25px;
+  padding: 9px 25px;
+  margin: 4px;
+}
+/* Sezione di Follows (Colonna destra) */
+.seccion-followers {
+  text-align: left;
+  width: 350px;
+}
+.seccion-followers h3 {
+  margin-left: 20px;
+  font-weight: normal;
+}
+.list-raccomandazioni {
+  padding-left: 25px;
+}
+.raccomandazioni {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding-left: 0px;
+  width: 304px;
+}
+li img {
+  position: relative;
+  top: 8px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+.title-subtitle h4,
+p {
+  margin: 1px;
+}
+.title-subtitle p {
+  color: gray;
+  font-size: 0.8rem;
+}
+.senza-punti {
+  padding-left: 0px;
+}
+.raccomandazioni button {
+  background-color: white;
+  color: black;
+  border: solid 1px grey;
+  margin: 10px 20px;
+  border-radius: 25px;
+  padding: 10px 20px 10px 20px;
+}
+
+/* Mini vlogs recenti (Colonna destra) */
+.seccion-minivlogs {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.seccion-minivlogs h3 {
+  font-weight: 400;
+}
+.mini-vlogs {
+  display: flex;
+  flex-direction: column;
+}
+.mini-vlog-destra1 {
+  margin-bottom: 20px;
+}
+.mini-vlog-destra1 h3 {
+  font-size: 1rem;
+  margin: 5px;
+  margin-left: 0px;
+  font-weight: 550;
+}
+.mini-vlog-destra2 h3 {
+  font-size: 1rem;
+  margin: 10px;
+  margin-left: 0px;
+  font-weight: 550;
+}
+/* Autori (Dentro di minivlogs-Colonna destra) */
+.autore-destro {
+  display: flex;
+  align-items: center;
+}
+.autore-destro.h2 {
+  font-size: 0.5rem;
+}
+.autore-destro img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+/* Data e altro (Dentro di minivlogs-Colonna destra) */
+.data-destra span {
+  font-size: 0.9rem;
+  font-style: normal;
+  color: #888;
+  padding-right: 5px;
+  font-weight: 250;
+}
+
+/*.data-destra button {
+  background-color: rgb(227, 227, 227);
+  color: rgb(141, 136, 136);
+  border: rgb(227, 227, 227);
+  border-radius: 25px;
+  padding: 5px;
+}*/
+
+/* See all (Colonna destra) */
+.altri-articoli {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: green;
+}
+.altri-articoli a {
+  color: green;
+  font-weight: 150;
+}
+/* Altri servizi (Colonna destra) */
+.help-ecc {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  width: 370px;
+  margin-top: 100px;
+}
+.help-ecc span {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  color: #888;
+  font-weight: 300;
+}
