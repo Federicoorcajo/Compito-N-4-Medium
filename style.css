@@ -57,7 +57,6 @@ button {
 /* Colonna sinistra */
 .columnleft {
   flex-direction: column;
-
 }
 /* Impostazioni dei vlogs (Colonna sinistra) */
 .entrata-vlog1 {
@@ -68,7 +67,8 @@ button {
   max-width: 100%;
   height: 240px;
 }
-.autore-paragrafo-data h2, p{
+.autore-paragrafo-data h2,
+p {
   display: flex;
 }
 .autore-paragrafo-data {
@@ -77,7 +77,6 @@ button {
 .autore {
   display: flex;
   align-items: center;
-
 }
 
 .autore img {
@@ -111,8 +110,8 @@ h2 {
 
 .imagevlog img {
   max-width: 330px;
-  height: 210px;
-  width: 330px;
+  height: 190px;
+  width: 313px;
   margin-right: 40px;
 }
 /* dare un width? */
@@ -145,12 +144,9 @@ h2 {
   margin-right: 13px;
 }
 
-
 /* Impostazioni degli elementi (Colonna destra) */
 .entrata-vlog2 {
   width: 50%;
-  position: relative;
-  top: 0;
   border: 1px solid #ccc;
   padding: 20px;
   height: 2000px;
@@ -217,6 +213,8 @@ button.connect {
 .maybe {
   color: gray;
   font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Raccomandazioni bottoni (Colonna destra) */
@@ -256,7 +254,6 @@ button.connect {
   width: 304px;
 }
 li img {
-  
   top: 8px;
   width: 60px;
   height: 60px;
